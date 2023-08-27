@@ -1,77 +1,362 @@
 <!DOCTYPE html>
-   <html lang="en">
-   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-      <!--=============== FAVICON ===============-->
-      <link rel="shortcut icon" href="assets/images/favicon (1).png" type="image/x-icon">
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="assets/favicon1.png" type="image/x-icon" />
 
-      <!--=============== REMIXICONS ===============-->
-      <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+    <!--=============== REMIXICONS ===============-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
 
-      <!--=============== SWIPER CSS ===============-->
-      <link rel="stylesheet" href="">
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="CSS/swiper-bundel.min.css" />
 
-      <!--=============== CSS ===============-->
-      <link rel="stylesheet" href="assets/css/styles.css">
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="CSS/style.css" />
 
-      <title>Responsive lamp website - Azhar</title>
-   </head>
-   <body>
-      <!--==================== HEADER ====================-->
-      <header class="header" id="header">
-         
-      </header>
+    <title>Responsive lamp website - Azhar</title>
+  </head>
+  <body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#" class="nav__logo"> 
+          AZHAR<span>LIGHT</span>
+         </a>
 
-      <!--==================== MAIN ====================-->
-      <main class="main">
-         <!--==================== HOME ====================-->
-         <section class="home section" id="home">
-            
-         </section>
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link">Home</a>
+            </li>
 
-         <!--==================== POPULAR ====================-->
-         <section class="popular section" id="popular">
-            
-         </section>
+            <li class="nav__item">
+              <a href="#popular" class="nav__link">Popular</a>
+            </li>
 
-         <!--==================== CHOOSE ====================-->
-         <section class="choose section" id="choose">
-            
-         </section>
+            <li class="nav__item">
+              <a href="#choose" class="nav__link">Choose</a>
+            </li>
 
-         <!--==================== FEATURES ====================-->
-         <section class="features section">
-            
-         </section>
+            <li class="nav__item">
+              <a href="#products" class="nav__link">Products</a>
+            </li>
+          </ul>
 
-         <!--==================== PRODUCTS ====================-->
-         <section class="products section" id="products">
-            
-         </section>
+          <!-- Close Button  -->
+          <div class="nav__close" id="nav-close">
+            <i class="ri-close-line"></i>
+          </div>
+        </div>
 
-         <!--==================== JOIN ====================-->
-         <section class="join section">
-            
-         </section>
-      </main>
+        <!-- Toggle Button -->
+        <div class="nav__toggle" id="nav-toggle">
+            <i class="ri-menu-line"></i>
+        </div>
+      </nav>
+    </header>
 
-      <!--==================== FOOTER ====================-->
-      <footer class="footer">
-         
-      </footer>
+    <!--==================== MAIN ====================-->
+    <main class="main">
+      <!--==================== HOME ====================-->
+      <section class="home section" id="home">
+         <div class="home__bg"></div>
 
-      <!--========== SCROLL UP ==========-->
+         <div class="home__container container grid">
+            <div class="home__content grid">
+               <div class="home__data">
+                  <h3 class="home__subtitle">
+                     The best light bulbs
+                  </h3>
 
+                  <h1 class="home__title">
+                     Unique Light <br>
+                     For You Home
+                  </h1>
 
-      <!--=============== SCROLLREVEAL ===============-->
-      <script src=""></script>
+                  <div class="home__buttons">
+                     <a href="#" class="button">
+                        Discover Now
+                     </a>
 
-      <!--=============== SWIPER JS ===============-->
-      <script src=""></script>
+                     <a href="#" class="button__link">
+                        <i class="ri-play-circle-line"></i> Watch Video
+                     </a>
+                  </div>
+               </div>
 
-      <!--=============== MAIN JS ===============-->
-      <script src="assets/js/main.js"></script>
-   </body>
+               <div class="home__info">
+                  <div>
+                     <h3 class="home__info-title">
+                        9K<span>+</span>
+                     </h3>
+                     <span class="home__info-subtitle">
+                        Premium <br> Product
+                     </span>
+                  </div>
+
+                  <div>
+                     <h3 class="home__info-title">
+                        2K<span>+</span>
+                     </h3>
+                     <span class="home__info-subtitle">
+                        Happy <br> Customer
+                     </span>
+                  </div>
+
+                  <div>
+                     <h3 class="home__info-title">
+                        28<span>+</span>
+                     </h3>
+                     <span class="home__info-subtitle">
+                        Awards <br> Winning
+                     </span>
+                  </div>
+               </div>
+            </div>
+
+            <div class="home__image">
+               <div class="home__blub">
+                  <img src="assets/home-lamp.png
+                  " alt="home image" class="home__img">
+                  <h1 class="home__blub-title">LIGHT</h1>
+
+                  <div class="home__shadow"></div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <!--==================== POPULAR ====================-->
+      <section class="popular section" id="popular">
+         <div class="popular__container container">
+            <div class="popular__data">
+               <h2 class="section__title">Popular Product</h2>
+
+               <p class="popular__description">
+                  Find our best products faster and get the 
+                  quality lights we have for you.
+               </p>
+            </div>
+
+            <div class="popular__content grid swiper">
+               <div class="swiper-wrapper">
+                  <article class="popular__card swiper-slide">
+                     <div class="popular__blub">
+                        <img src="assets/roundness-light.png" alt="modern-lamp " class="popular__img">
+                     </div>
+
+                     <h3 class="popular__name">Roundness Light</h3>
+                     <span class="popular__subtitle">Hanging Light</span>
+                     <h3 class="popular__price">
+                        <span>$</span>19
+                     </h3>
+
+                     <button class="popular__button">
+                        <i class="ri-add-line"></i>
+                     </button>
+                  </article>
+
+                  <article class="popular__card swiper-slide">
+                     <div class="popular__blub">
+                        <img src="assets/modern-lamp.png" alt="modern-lamp " class="popular__img">
+                     </div>
+
+                     <h3 class="popular__name">Modern Light</h3>
+                     <span class="popular__subtitle">Hanging Light</span>
+                     <h3 class="popular__price">
+                        <span>$</span>14
+                     </h3>
+
+                     <button class="popular__button">
+                        <i class="ri-add-line"></i>
+                     </button>
+                  </article>
+
+                  <article class="popular__card swiper-slide">
+                     <div class="popular__blub">
+                        <img src="assets/industrial-lamp.png" alt="modern-lamp " class="popular__img">
+                     </div>
+
+                     <h3 class="popular__name">Industrial Light</h3>
+                     <span class="popular__subtitle">Hanging Light</span>
+                     <h3 class="popular__price">
+                        <span>$</span>20
+                     </h3>
+
+                     <button class="popular__button">
+                        <i class="ri-add-line"></i>
+                     </button>
+                  </article>
+
+                  <article class="popular__card swiper-slide">
+                     <div class="popular__blub">
+                        <img src="assets/superbolw-lamp.png" alt="modern-lamp " class="popular__img">
+                     </div>
+
+                     <h3 class="popular__name">Superbolw Light</h3>
+                     <span class="popular__subtitle">Hanging Light</span>
+                     <h3 class="popular__price">
+                        <span>$</span>18
+                     </h3>
+
+                     <button class="popular__button">
+                        <i class="ri-add-line"></i>
+                     </button>
+                  </article>
+
+                  <article class="popular__card swiper-slide">
+                     <div class="popular__blub">
+                        <img src="assets/ultrawide-lamp.png" alt="modern-lamp " class="popular__img">
+                     </div>
+
+                     <h3 class="popular__name">Ultrawide Light</h3>
+                     <span class="popular__subtitle">Hanging Light</span>
+                     <h3 class="popular__price">
+                        <span>$</span>16
+                     </h3>
+
+                     <button class="popular__button">
+                        <i class="ri-add-line"></i>
+                     </button>
+                  </article>
+               </div>
+
+                 <!-- navigation buttons -->
+                 <div class="swiper-button-prev">
+                     <i class="ri-arrow-left-s-line"></i>
+                 </div>
+
+                 <div class="swiper-button-next">
+                     <i class="ri-arrow-right-s-line"></i>
+                 </div>
+            </div>
+         </div>
+      </section>
+
+      <!--==================== CHOOSE ====================-->
+      <section class="choose section" id="choose">
+         <div class="choose__conttainer container grid">
+            <div class="choose__image">
+               <div class="choose__blub">
+                  <img src="assets/choose-lamp.png" alt="choose image" class="choose__img">
+                  <h1 class="choose__blub-title">LIGHT</h1>
+               </div>
+
+               <div class="choose__shadow"></div>
+            </div>
+
+            <diiv class="choose__content">
+               <div class="choose__data">
+                  <h2 class="section__title">Why Choose Us</h2>
+
+                  <p class="choose__description">
+                     Our products have won numerous awards 
+                     and we can guarantee the unlimited 
+                     quality of our products.
+                  </p>
+               </div>
+
+               <div class="choose__faq">
+                  <div class="choose__faq--item">
+                     <div class="choose__faq-header">
+                        <div class="choose__faq-icon">
+                           <i class="ri-add-line"></i>
+                        </div>
+                        <h3 class="choose__faq-title">Frequently New Design</h3>
+                     </div>
+
+                     <div class="choose__faq-content">
+                        <p class="choose__faq-description">
+                           We make new designs every year, 
+                           fashion designs, trending and of 
+                           the best quality.
+                        </p>
+                     </div>
+                  </div>
+
+                  <div class="choose__faq--item">
+                     <div class="choose__faq-header">
+                        <div class="choose__faq-icon">
+                           <i class="ri-add-line"></i>
+                        </div>
+                        <h3 class="choose__faq-title">Original Production</h3>
+                     </div>
+
+                     <div class="choose__faq-content">
+                        <p class="choose__faq-description">
+                           We are the industrial chain of 
+                           quality lighting products and offer 
+                           the most advantageous price.
+                        </p>
+                     </div>
+                  </div>
+
+                  <div class="choose__faq--item">
+                     <div class="choose__faq-header">
+                        <div class="choose__faq-icon">
+                           <i class="ri-add-line"></i>
+                        </div>
+                        <h3 class="choose__faq-title">Production With Large Stock</h3>
+                     </div>
+
+                     <div class="choose__faq-content">
+                        <p class="choose__faq-description">
+                           You will not be left without the lamp 
+                           you chose, we have a large stock 
+                           possible in all models.
+                        </p>
+                     </div>
+                  </div>
+
+                  <div class="choose__faq--item">
+                     <div class="choose__faq-header">
+                        <div class="choose__faq-icon">
+                           <i class="ri-add-line"></i>
+                        </div>
+                        <h3 class="choose__faq-title">Professional Quality Control</h3>
+                     </div>
+
+                     <div class="choose__faq-content">
+                        <p class="choose__faq-description">
+                           Our quality control does everything 
+                           possible to send you the best 
+                           possible product for your home.
+                        </p>
+                     </div>
+                  </div>
+               </div>
+            </diiv>
+         </div>
+      </section>
+
+      <!--==================== FEATURES ====================-->
+      <section class="features section"></section>
+
+      <!--==================== PRODUCTS ====================-->
+      <section class="products section" id="products"></section>
+
+      <!--==================== JOIN ====================-->
+      <section class="join section"></section>
+    </main>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer"></footer>
+
+    <!--========== SCROLL UP ==========-->
+
+    <!--=============== SCROLLREVEAL ===============-->
+    <script src=""></script>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="js/swiper-bundel.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="js/main.js"></script>
+  </body>
 </html>

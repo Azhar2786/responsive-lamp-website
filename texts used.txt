@@ -30,7 +30,7 @@ Happy <br> Customer
 28<span>+</span>
 Awards <br> Winning
 
-.home__blob-title
+.home__blub-title
 LIGHT
 
 
