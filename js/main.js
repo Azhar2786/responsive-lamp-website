@@ -62,6 +62,28 @@ const popularSwiper = new Swiper('.popular__content', {
 
 /*=============== CHOOSE FAQ ===============*/
 
+const faqItems = document.querySelectorAll('.choose__faq-item')
+
+// 1. Select each item
+faqItems.forEach((item) => {
+    const faqHeader = item.querySelector('choose__faq-header')
+
+    // 2. Select each button click
+    faqHeader.addEventListener('click', () =>{
+        // 5. Call the toggleItem function
+        toggleItem(item)
+    })
+})
+
+//create fuunction to dispaly the content
+const toggleItem = (item) => {
+    // 3.1 Select each faq content
+    const faqContent = item.querySelector('.choose__faq-content')
+
+    // 4. add max - height to the content and add the faq-open class
+    faqContent.style.height = faqContent.scrollHeight + 'px'
+    item.classList.add('faq-open');
+}
 
 /*=============== SHOW SCROLL UP ===============*/ 
 

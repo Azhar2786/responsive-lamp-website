@@ -552,6 +552,52 @@ img {
   writing-mode: vertical-lr;
   transform: rotate(180deg);
 }
+
+.choose__data{
+  text-align: center;
+}
+
+.choose__content,
+.choose__faq{
+  display: grid;
+  row-gap: 2rem;
+}
+
+.choose__faq-header{
+  display: flex;
+  align-items: center;
+  column-gap: .75rem;
+  cursor: pointer;
+}
+
+.choose__faq-title{
+  font-size: var(--normal-font-size);
+}
+
+.choose__faq-icon{
+  display: inline-flex;
+  padding: .25rem;
+  background: var(--third-gradient);
+  border-radius: .5rem;
+  color: var(--white-color);
+  font-size: 1.25rem;
+  box-shadow: 0 2px 8px hsla(15, 68%, 32%, .4);
+  transition: box-shadow .4s;
+}
+
+.choose__faq-icon i{
+  transition: transform .3s;
+}
+
+.choose__faq-description{
+  padding: .5rem 1rem 0 2.5rem;
+}
+
+.choose__faq-content{
+  overflow: hidden;
+  height: 0;
+  transition: height .3s ease;
+}
 /* Rotate icon */
 
 
