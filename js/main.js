@@ -66,12 +66,20 @@ const faqItems = document.querySelectorAll('.choose__faq-item')
 
 // 1. Select each item
 faqItems.forEach((item) => {
-    const faqHeader = item.querySelector('choose__faq-header')
+    const faqHeader = item.querySelector('.choose__faq-header')
 
     // 2. Select each button click
     faqHeader.addEventListener('click', () =>{
+        // 7. Select the current faq-open class
+        const openItem = document.querySelector('.faq-open')
+
         // 5. Call the toggleItem function
         toggleItem(item)
+
+        //8. Remove the faq-open class from other items
+        if(openItem && openItem != item){
+            toggleItem(openItem)
+        }
     })
 })
 
@@ -80,9 +88,15 @@ const toggleItem = (item) => {
     // 3.1 Select each faq content
     const faqContent = item.querySelector('.choose__faq-content')
 
-    // 4. add max - height to the content and add the faq-open class
-    faqContent.style.height = faqContent.scrollHeight + 'px'
-    item.classList.add('faq-open');
+    // 6. If the same item contains the faq-open class, remove
+    if(item.classList.contains('faq-open')){
+        faqContent.removeAttribute('style')
+        item.classList.remove('faq-open')
+    } else{
+        // 4. add max - height to the content and add the faq-open class
+        faqContent.style.height = faqContent.scrollHeight + 'px'
+        item.classList.add('faq-open');
+    }
 }
 
 /*=============== SHOW SCROLL UP ===============*/ 
