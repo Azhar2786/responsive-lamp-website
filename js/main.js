@@ -158,9 +158,9 @@ if (selectedTheme) {
    themeButton.addEventListener('click', () => {
      // Add or remove the dark / icon theme
      document.body.classList.toggle(darkTheme)
-     themeButton.classList.toggle(iconTheme)
+     themeButton.classList.toggle(iconTheme) 
      //we save the theme and current icon that user chose
-     localStorage.setItem('selected-theme', getCurrentIcon())
+     localStorage.setItem('selected-theme', getCurrentTheme())
      localStorage.setItem('selected-icon', getCurrentIcon())
 
    })

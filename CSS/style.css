@@ -255,13 +255,12 @@ body.dark-theme{
 @media screen and (max-width: 1023px){
   .nav__menu{
     position: fixed;
-    background-color: hsla(0, 0%, 0%, .7);
+    background-color: var(--body-color);
     left: 0;
     top: -100%;
     width: 100%;
     padding-block: 4rem;
     box-shadow: 0 2px 16px hsla(0, 0%, 0%, .1);
-    backdrop-filter: blur(8px);
     transition: top .4s;
   }
 }
@@ -271,6 +270,10 @@ body.dark-theme{
   flex-direction: column;
   text-align: center;
   row-gap: 2rem;
+}
+
+.nav__link{
+  color: var(--text-color);
 }
 
 .nav__link:hover{
@@ -299,7 +302,7 @@ body.dark-theme{
   box-shadow: 0 2px 16px hsla(0, 0%, 0%, .1);
 }
 
-.bg-header :is(.nav__logo, .nav__toggle, .change-theme){
+.bg-header :is(.nav__logo, .nav__toggle,.change-theme ){
   color: var(--title-color);
 }
 
